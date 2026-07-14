@@ -1,0 +1,65 @@
+
+
+
+Machine Learning Architecture
+
+Raw Motor Data
+      (Current, Voltage, Power, Temperature)
+                          │
+                          ▼
+                 Data Collection (CSV)
+                          │
+                          ▼
+                Data Preprocessing
+      • Remove invalid values
+      • Feature selection
+      • Data labeling
+                          │
+                          ▼
+               Training Dataset
+                          │
+                          ▼
+                 Train-Test Split
+                   (80% / 20%)
+                          │
+                          ▼
+             XGBoost Classification Model
+                          │
+                          ▼
+               Model Performance Evaluation
+      • Accuracy
+      • Precision
+      • Recall
+      • F1-Score
+                          │
+                          ▼
+         Save Trained Model (.pkl File)
+                          │
+                          ▼
+          Manual Testing / Prediction Program
+                          │
+                          ▼
+              User Inputs Motor Values
+                          │
+                          ▼
+               AI Prediction Output
+      • BALANCED
+      • SHIFT_TO_M1
+      • SHIFT_TO_M2
+      • OVERLOAD
+
+Current Status
+
+Initial dataset prepared (100 samples).
+
+Data preprocessing completed for the initial dataset.
+
+XGBoost model trained with approximately 95% accuracy.
+
+Initial manual prediction program developed for testing.
+
+Dataset refinement and additional data collection are in progress.
+
+Prediction logic and output formatting are being improved.
+
+Real-time hardware integration will be carried out in the next phase.
