@@ -1,0 +1,74 @@
+
+
+Algorithm: AI-Based Load Balancing Using XGBoost
+
+1. Start the program.
+
+
+2. Load the motor operating dataset.
+
+
+3. Select the input features:
+
+Motor 1 Current
+
+Motor 1 Power
+
+Motor 1 Temperature
+
+Motor 2 Current
+
+Motor 2 Power
+
+Motor 2 Temperature
+
+
+
+4. Preprocess the dataset and encode the output labels.
+
+
+5. Split the dataset into training and testing sets.
+
+
+6. Train the XGBoost classification model.
+
+
+7. Evaluate the trained model using accuracy and classification metrics.
+
+
+8. Save the trained model for future predictions.
+
+
+9. Accept new motor operating parameters from the user.
+
+
+10. Predict the load-balancing decision.
+
+
+11. Display the predicted result (BALANCED, SHIFT_TO_M1, SHIFT_TO_M2, or OVERLOAD).
+
+
+12. End the program.
+
+
+Sample Code
+
+import pickle
+import pandas as pd
+
+# Load trained model
+with open("motor_xgboost_model.pkl", "rb") as f:
+    model, encoder = pickle.load(f)
+
+# Sample input
+data = pd.DataFrame([{
+    "motor1_current": 6.5,
+    "motor1_power": 1560,
+    "motor1_temp": 65,
+    "motor2_current": 3.2,
+    "motor2_power": 768,
+    "motor2_temp": 42
+}])
+
+prediction = model.predict(data)
+print("Prediction:", encoder.inverse_transform(prediction)[0])
