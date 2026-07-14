@@ -1,0 +1,5 @@
+Project Objectives:
+The objective of this project is to develop an AI-based intelligent load balancing system for parallel electrical machines using machine learning techniques. The system analyzes motor operating parameters such as current, power, and temperature to predict the optimal load distribution between motors. An XGBoost classification model is employed to identify balanced conditions, recommend load shifting, and detect overload situations. The project aims to improve system efficiency, reduce unnecessary energy consumption, and prevent motor failures through predictive decision-making.
+
+Relevance to the Community:
+The proposed system can be applied in industries that operate multiple electrical machines, enabling efficient energy utilization, reducing maintenance costs, minimizing equipment downtime, and enhancing operational safety. It supports the development of smarter and more sustainable industrial automation systems.
